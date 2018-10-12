@@ -61,4 +61,4 @@ You can run the code in an IDE, or from the command line with `python -i filenam
 ## Development Team
 - Filipe Marques [[Akorra](https://github.com/Akorra)]
 - Rafael Pereira [[mindblastr](https://github.com/mindblastr)]
-- Beatriz Ferreira
+- Beatriz Ferreira [[diverbea](https://github.com/diverbea)]
