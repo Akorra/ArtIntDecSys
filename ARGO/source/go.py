@@ -1,15 +1,43 @@
-class Game:
+class Game:    
     def __init__(self):
-        print('[+] Game Created, please load a game board to proceed...')
+        print("[+] Game Created, please load a game board to proceed...")
         self.board = None
-		
-	def load_board(self, s):
+        
+    def to_move(self, s):
+        self.test_method_failure()
+        p = 1 #player
+        return p
+    
+    def terminal_test(self, s):
+        self.test_method_failure()
+        return True
+    
+    def utility(self, s, p):
+        self.test_method_failure()
+        payoff = 1
+        return payoff
+    
+    def actions(self, s):
+        '''
+            This is only returning empty spaces, available actions should not allow for KO rule breakers
+            and maybe even stupid moves
+        '''
+        self.test_method_failure()
+        return [(self.to_move(s), i, j) for i in range(self.n) for j in range(self.n) if go.board[i][j] == 0] 
+    
+    def result(self, s, a):
+        self.test_method_failure()
+        state = s
+        return state
+    
+    def load_board(self, s):
         '''
             Loads the board from an opened file stream and saves it to the class field 'board'
             as weel as board dimension 'n', and first player 'p'
             this is done while checking for file integrity
         '''
-        print("\t[+] Loading Board...")
+        
+        print("[+] Loading Board...")
         contents = s.read().split()
         try:
             self.n = int(contents[0]) # get board dimension
@@ -23,13 +51,17 @@ class Game:
             return
         
         if len(self.board) == self.n:
-            print('\t[+] Game Board Successfuly Loaded!')
+            print("\t[+] Game Board Successfuly Loaded!")
         else:
             # if dimensions dont match return failure
             self.load_failure()
     
     def load_failure(self):
-		#prints a simplistic stack for load_board function 
-        print('\t\t[-] Bad File...')
-        print('\t\t[-] Please try another file...')
+        print("\t[-] Bad File...")
+        print("\t[-] Please try another file...")
         self.board = None
+    
+    def test_method_failure(self):
+        if not self.board:
+            print('[-] Game not initiated, please lad a game borad...')
+            raise Exception('Error: Game not initiated.')
