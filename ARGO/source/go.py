@@ -57,6 +57,7 @@ class Game:
             self.load_failure()
     
     def load_failure(self):
+		#prints a simplistic stack for load_board function 
         print("\t[-] Bad File...")
         print("\t[-] Please try another file...")
         self.board = None
