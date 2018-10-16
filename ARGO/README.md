@@ -48,6 +48,18 @@ Game board will be represented in a text file containing the following lines:
   - `0122`
   - `0210`
   - `0000`
+## States and Actions
+### States
+#### `TBA`
+### Actions
+Action representation is the following tuple:
+<div align="center">
+  <a><img src="https://github.com/Akorra/ArtIntDecSys/blob/master/ARGO/bin/actions.JPG?raw=true"></a><br><br>
+</div>
+
+  - `p` represents player
+  - `i` represents the board row
+  - `j` represents the board column
 
 ## Python 3.4 and up
 
