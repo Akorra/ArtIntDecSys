@@ -54,7 +54,7 @@ Game board will be represented in a text file containing the following lines:
 ### Actions
 Action representation is the following tuple:
 <div align="center">
-  <a><img src="https://github.com/Akorra/ArtIntDecSys/blob/master/ARGO/bin/actions.JPG?raw=true"></a><br><br>
+  <a><img src="https://github.com/Akorra/ArtIntDecSys/blob/master/ARGO/bin/actions.JPG?raw=true"></a>
 </div>
 
   - `p` represents player
