@@ -17,6 +17,35 @@ The Goal of this project is to develop an [Atari Go](https://senseis.xmp.net/?Ba
   <a><img src="https://senseis.xmp.net/diagrams/28/7c2a15d2373af82f4ffe173d073a9302.png"></a><br><br>
 </div>
 
+## Rules of Atari Go
+
+### Liberties
+
+- Liberties are free spaces (**NOT DIAGONAL**) around a piece, or group, on the board.
+  - Single pieces have at most 4 liberties;
+  - Group pieces have at most 3 liberties each, and Groups themselves have the combined liberties of all the pieces that make them;
+
+### Group
+
+- When two or more pieces from the same faction are connected (by having one or more liberties taken, **NOT OCCUPIED**, by the same faction)
+  - Pieces that do not take a liberty by one of the same faction, **DO NOT** form a group;
+
+### Capture
+
+- A piece or group is considered captured when all it's liberties are occupied;
+- When it comes to groups, liberties that are occupied by the same faction are not considered occupied.
+
+### No repetition
+
+- No move can be made that returns the board to the previous state;
+
+### Game End
+
+- When both players pass (the state of the board is the same twice in a row)
+
+- When a player gets at least one piece captured
+
+
 ## Game Class Methods
 
 - The engine should be implemented using only Python version 3 and Standard Library modules.
