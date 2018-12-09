@@ -10,4 +10,4 @@
 
 ## Objective 
 
-    The objective of this mini-project is to formulate a Scheduling Problem as a CSP and solve it using an existing [backtracking algorithm implementation](https://github.com/aimacode/aima-pythonython)
+The objective of this mini-project is to formulate a Scheduling Problem as a CSP and solve it using an existing [backtracking algorithm implementation](https://github.com/aimacode/aima-pythonython)
