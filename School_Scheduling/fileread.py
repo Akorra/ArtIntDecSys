@@ -1,4 +1,3 @@
-
 with open('input_1.txt') as fh:
 
     inputInfo = dict()
@@ -15,7 +14,3 @@ with open('input_1.txt') as fh:
         inputInfo.update({split_line[0]:newTuple})
 
     print(inputInfo)        
-
-
-
-
